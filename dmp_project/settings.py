@@ -218,4 +218,10 @@ REST_FRAMEWORK = {
         "rest_framework.authentication.BasicAuthentication",
     ]
 }
-CSRF_TRUSTED_ORIGINS = ["ondigitalocean.app"]
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.ondigitalocean.app",
+    "ondigitalocean.app",
+]
+CSRF_COOKIE_SECURE = False
+SESSION_COOKIE_SECURE = False
+CSRF_COOKIE_HTTPONLY = False
