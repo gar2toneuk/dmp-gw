@@ -36,7 +36,7 @@ MIDDLEWARE = [
     "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
-    "django.middleware.csrf.CsrfViewMiddleware",
+    #"django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
@@ -218,4 +218,7 @@ REST_FRAMEWORK = {
         "rest_framework.authentication.BasicAuthentication",
     ]
 }
-CSRF_TRUSTED_ORIGINS = ["https://*.ondigitalocean.app", "ondigitalocean.app"]
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.ondigitalocean.app",
+    "ondigitalocean.app",
+]
